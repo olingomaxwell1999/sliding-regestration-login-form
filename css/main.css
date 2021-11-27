@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #03a9f4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .darkmodeBtn {
+  position: absolute;
+  z-index: 100000;
+  top: 40px;
+  right: 40px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+body .container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 20px;
+}
+
+body .container .blueBg {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: 420px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .blueBg .box {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .blueBg .box h2 {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+body .container .blueBg .box button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #fff;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+body .container .formBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+body .container .formBx .form {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .container .formBx .signinForm {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+body .container .formBx .signupForm {
+  left: 100%;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+body .container .formBx .signupForm .btn {
+  background: #f43648;
+  color: #fff;
+}
+
+body .container .formBx form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .formBx form h3 {
+  text-transform: capitalize;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+body .container .formBx form input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+body .container .formBx form .btn {
+  background: #03a9f4;
+  border: none;
+  max-width: 100px;
+  cursor: pointer;
+}
+
+body .container .formBx form .forgot {
+  color: #333;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+body .container .active {
+  left: 50%;
+}
+
+body .container .active .signinForm {
+  left: -100%;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+body .container .active .signupForm {
+  left: 0;
+}
+
+.active {
+  background: #f43648;
+}
+
+.dark {
+  background: #000;
+}
+
+@media (max-width: 991px) {
+  body .container {
+    max-width: 300px;
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container .blueBg {
+    top: 0;
+    height: 100%;
+  }
+  body .container .blueBg .box {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    bottom: 0;
+  }
+  body .container .blueBg .signin {
+    top: 0;
+  }
+  body .container .formBx {
+    width: 100%;
+    height: 450px;
+    top: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  body .container .active {
+    left: 0;
+    top: 150px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
